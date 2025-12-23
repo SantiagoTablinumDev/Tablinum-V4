@@ -1,0 +1,328 @@
+/* SpecimenCard Styles */
+.specimenCard {
+  width: 100%;
+  max-width: 24rem;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  border-color: rgb(from var(--color-border) r g b / 0.5);
+  background: linear-gradient(135deg, var(--color-card), var(--color-card), rgb(from var(--color-card) r g b / 0.95));
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.specimenCard:hover {
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-color: rgb(from var(--color-primary) r g b / 0.2);
+}
+
+.imageContainer {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, rgb(from var(--color-muted) r g b / 0.5), var(--color-muted));
+  border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+}
+
+.singleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.singleImage:hover {
+  transform: scale(1.05);
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel:hover .carouselPrev,
+.carousel:hover .carouselNext {
+  opacity: 1;
+}
+
+.carouselPrev,
+.carouselNext {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgb(from var(--color-background) r g b / 0.8);
+  border: 1px solid var(--color-border);
+}
+
+.carouselPrev:hover,
+.carouselNext:hover {
+  background-color: var(--color-background);
+}
+
+.carouselPrev {
+  left: 0.5rem;
+}
+
+.carouselNext {
+  right: 0.5rem;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carouselImage:hover {
+  transform: scale(1.05);
+}
+
+.noImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-muted), rgb(from var(--color-muted) r g b / 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgb(from var(--color-border) r g b / 0.6);
+}
+
+.specimenTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.specimenNumber {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  color: var(--color-primary);
+  background-color: rgb(from var(--color-primary) r g b / 0.05);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.scientificName {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-family: ui-serif, Georgia, serif;
+  color: var(--color-foreground);
+}
+
+.genus {
+  color: var(--color-primary);
+}
+
+.species {
+  color: var(--color-muted-foreground);
+}
+
+.phyloBadge {
+  background: linear-gradient(90deg, var(--color-secondary), rgb(from var(--color-secondary) r g b / 0.8));
+  color: var(--color-secondary-foreground);
+  border: 1px solid rgb(from var(--color-border) r g b / 0.3);
+}
+
+/* Section Styles */
+.geologicalSection {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, 
+    rgb(251 191 36 / 0.1),
+    rgb(249 115 22 / 0.1)
+  );
+  border-radius: 0.5rem;
+  border: 1px solid rgb(251 191 36 / 0.3);
+  space-y: 0.5rem;
+}
+
+.dark .geologicalSection {
+  background: linear-gradient(90deg, 
+    rgb(251 191 36 / 0.05),
+    rgb(249 115 22 / 0.05)
+  );
+  border-color: rgb(251 191 36 / 0.2);
+}
+
+.locationSection {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, 
+    rgb(16 185 129 / 0.1),
+    rgb(34 197 94 / 0.1)
+  );
+  border-radius: 0.5rem;
+  border: 1px solid rgb(16 185 129 / 0.3);
+  space-y: 0.5rem;
+}
+
+.dark .locationSection {
+  background: linear-gradient(90deg, 
+    rgb(16 185 129 / 0.05),
+    rgb(34 197 94 / 0.05)
+  );
+  border-color: rgb(16 185 129 / 0.2);
+}
+
+.discoverySection {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, 
+    rgb(59 130 246 / 0.1),
+    rgb(6 182 212 / 0.1)
+  );
+  border-radius: 0.5rem;
+  border: 1px solid rgb(59 130 246 / 0.3);
+  space-y: 0.5rem;
+}
+
+.dark .discoverySection {
+  background: linear-gradient(90deg, 
+    rgb(59 130 246 / 0.05),
+    rgb(6 182 212 / 0.05)
+  );
+  border-color: rgb(59 130 246 / 0.2);
+}
+
+.specimenSection {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, 
+    rgb(147 51 234 / 0.1),
+    rgb(99 102 241 / 0.1)
+  );
+  border-radius: 0.5rem;
+  border: 1px solid rgb(147 51 234 / 0.3);
+  space-y: 0.5rem;
+}
+
+.dark .specimenSection {
+  background: linear-gradient(90deg, 
+    rgb(147 51 234 / 0.05),
+    rgb(99 102 241 / 0.05)
+  );
+  border-color: rgb(147 51 234 / 0.2);
+}
+
+.commentSection {
+  padding: 0.75rem;
+  background: linear-gradient(90deg, 
+    rgb(148 163 184 / 0.1),
+    rgb(156 163 175 / 0.1)
+  );
+  border-radius: 0.5rem;
+  border: 1px solid rgb(148 163 184 / 0.3);
+  space-y: 0.5rem;
+}
+
+.dark .commentSection {
+  background: linear-gradient(90deg, 
+    rgb(148 163 184 / 0.05),
+    rgb(156 163 175 / 0.05)
+  );
+  border-color: rgb(148 163 184 / 0.2);
+}
+
+.sectionTitle {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.geologicalSection .sectionTitle {
+  color: rgb(146 64 14);
+}
+
+.dark .geologicalSection .sectionTitle {
+  color: rgb(251 191 36);
+}
+
+.locationSection .sectionTitle {
+  color: rgb(5 150 105);
+}
+
+.dark .locationSection .sectionTitle {
+  color: rgb(16 185 129);
+}
+
+.discoverySection .sectionTitle {
+  color: rgb(29 78 216);
+}
+
+.dark .discoverySection .sectionTitle {
+  color: rgb(59 130 246);
+}
+
+.specimenSection .sectionTitle {
+  color: rgb(109 40 217);
+}
+
+.dark .specimenSection .sectionTitle {
+  color: rgb(147 51 234);
+}
+
+.commentSection .sectionTitle {
+  color: rgb(71 85 105);
+}
+
+.dark .commentSection .sectionTitle {
+  color: rgb(148 163 184);
+}
+
+.gridCols2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.fieldContainer {
+  background-color: rgb(from var(--color-background) r g b / 0.6);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+}
+
+.fieldLabel {
+  color: var(--color-muted-foreground);
+  font-weight: 500;
+}
+
+.fieldValue {
+  color: var(--color-foreground);
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  font-size: 0.75rem;
+}
+
+.fieldNumber {
+  color: var(--color-foreground);
+  margin-left: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  font-size: 0.75rem;
+  background-color: rgb(from var(--color-background) r g b / 0.6);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.125rem;
+}
+
+.dateField {
+  color: var(--color-foreground);
+  margin-left: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  font-size: 0.75rem;
+}
+
+.coordinates {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  font-size: 0.75rem;
+  background-color: rgb(from var(--color-background) r g b / 0.6);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+  color: var(--color-muted-foreground);
+}
+
+.commentText {
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  font-style: italic;
+  line-height: 1.625;
+}

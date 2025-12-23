@@ -1,0 +1,226 @@
+/* CreateCollectionModal Styles */
+.modalContent {
+  max-width: 32rem;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--color-card), var(--color-card), rgb(from var(--color-card) r g b / 0.95));
+  border: 2px solid rgb(from var(--color-border) r g b / 0.5);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.modalHeader {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(from var(--color-border) r g b / 0.5);
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  background: linear-gradient(90deg, var(--color-primary), rgb(from var(--color-primary) r g b / 0.8));
+  background-clip: text;
+  color: transparent;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.nameSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgb(from var(--color-primary) r g b / 0.05), rgb(from var(--color-primary) r g b / 0.1));
+  border-radius: 0.5rem;
+  border: 1px solid rgb(from var(--color-primary) r g b / 0.2);
+}
+
+.nameLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.nameInput {
+  border-color: rgb(from var(--color-primary) r g b / 0.2);
+  background-color: rgb(from var(--color-background) r g b / 0.8);
+}
+
+.nameInput:focus {
+  border-color: rgb(from var(--color-primary) r g b / 0.5);
+}
+
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgb(from var(--color-secondary) r g b / 0.05), rgb(from var(--color-secondary) r g b / 0.1));
+  border-radius: 0.5rem;
+  border: 1px solid rgb(from var(--color-secondary) r g b / 0.2);
+}
+
+.descriptionLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-secondary-foreground);
+}
+
+.descriptionInput {
+  border-color: rgb(from var(--color-secondary) r g b / 0.2);
+  background-color: rgb(from var(--color-background) r g b / 0.8);
+}
+
+.descriptionInput:focus {
+  border-color: rgb(from var(--color-secondary) r g b / 0.5);
+}
+
+.specimensSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgb(from var(--color-muted) r g b / 0.1), rgb(from var(--color-muted) r g b / 0.2));
+  border-radius: 0.5rem;
+  border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+}
+
+.specimensLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.specimensScrollArea {
+  height: 12rem;
+  border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+  border-radius: 0.5rem;
+  background-color: rgb(from var(--color-background) r g b / 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.specimensList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.specimenItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, var(--color-background), rgb(from var(--color-muted) r g b / 0.1));
+  border: 1px solid rgb(from var(--color-border) r g b / 0.3);
+  transition: all 0.2s ease;
+}
+
+.specimenItem:hover {
+  border-color: rgb(from var(--color-primary) r g b / 0.2);
+  background: rgb(from var(--color-primary) r g b / 0.05);
+}
+
+.specimenCheckbox {
+  border-color: rgb(from var(--color-primary) r g b / 0.3);
+}
+
+.specimenCheckbox[data-state="checked"] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.specimenInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.specimenLabel {
+  cursor: pointer;
+  display: block;
+}
+
+.specimenNumber {
+  font-weight: 500;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  background-color: rgb(from var(--color-primary) r g b / 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: fit-content;
+}
+
+.specimenName {
+  font-size: 0.875rem;
+  font-family: ui-serif, Georgia, serif;
+  font-style: italic;
+  color: var(--color-foreground);
+}
+
+.genus {
+  color: var(--color-primary);
+}
+
+.species {
+  color: var(--color-muted-foreground);
+}
+
+.specimenLocation {
+  font-size: 0.75rem;
+  color: var(--color-muted-foreground);
+  margin-top: 0.25rem;
+}
+
+.selectedCount {
+  font-size: 0.75rem;
+  color: var(--color-muted-foreground);
+  background-color: rgb(from var(--color-muted) r g b / 0.2);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(from var(--color-border) r g b / 0.3);
+}
+
+.selectedNumber {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+  font-weight: 500;
+}
+
+.modalFooter {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(from var(--color-border) r g b / 0.5);
+  display: flex;
+  gap: 0.75rem;
+}
+
+.cancelButton {
+  border-color: rgb(from var(--color-border) r g b / 0.5);
+}
+
+.cancelButton:hover {
+  border-color: rgb(from var(--color-primary) r g b / 0.3);
+  background-color: rgb(from var(--color-muted) r g b / 0.3);
+}
+
+.createButton {
+  background: linear-gradient(90deg, var(--color-primary), rgb(from var(--color-primary) r g b / 0.9));
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: all 0.2s ease;
+}
+
+.createButton:hover {
+  background: linear-gradient(90deg, rgb(from var(--color-primary) r g b / 0.9), var(--color-primary));
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

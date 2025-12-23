@@ -1,0 +1,170 @@
+
+.padre{
+  width: 100%;
+  position: fixed;
+
+z-index: 1000;
+}
+.icon-lng{
+  background-color: transparent;
+  border-radius: 50px;
+  border: none;
+  
+
+}
+.nav-Bar1{
+  width: 100%;
+  background-color:#6b705c;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+}
+ .img-perfil{
+  border-radius: 200px;
+}
+.botones{
+  display: flex;
+  background-color:#6b705c;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.botonCito{
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+  width:15%;
+  height: 10%;
+  margin-top: 30px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+  color: white;
+  transition: 0.06s;
+  font-size: 15px;  
+  font-weight: 100;
+ 
+}
+ .active2,.botonCito:hover{
+
+  background-color:#a5a58d;
+  height: 80%;
+  margin-top: 30px;
+font-size: 17px;
+  color: black;
+  font-weight: bold;
+  width:15%;
+  height: 80%;
+  
+}
+.imag{
+  cursor: pointer;
+  height: 100%;
+}
+.logo-home{
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.pboton{
+  margin-top: 5px;
+}
+
+.perfil{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 6px;
+}
+.boton-catalogo{
+  padding: 1%;
+ 
+}
+.boton-icono{
+  color :white;
+}
+.boton-icono:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.langbot{
+  display: flex;
+ 
+  justify-content: center;
+}
+.langTXT{
+  display: flex;
+margin-top: 15px;
+font-size: 15px;
+font-weight: 500;
+color: white;
+justify-content: center;
+width: 100%;
+}
+
+.lang{
+  
+  display: flex;
+  flex-direction: column;
+  width: 13%;
+}
+.lang-switch {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.lang-switch:hover {
+  transform: scale(1.1);
+}
+
+.lang-flag {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+/* Animación facherita al cambiar idioma */
+.lang-flag.change {
+  transform: rotateY(180deg);
+  opacity: 0.5;
+}
+
+
+.icon-lng {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-lng img {
+  transition: transform 0.3s ease;
+}
+
+.icon-lng:hover img {
+  transform: scale(1.1);
+}
+.icon-lng {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.lang-flag {
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* Animación flip */
+.flip .lang-flag {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,104 @@
+/* ANIMACIÓN Y ESTRUCTURA GENERAL */
+
+.fadeIn {
+    animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BOX DE BÚSQUEDA */
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.searchBox svg {
+    opacity: 0.6;
+    min-width: 18px;
+}
+
+/* LISTA SCROLLABLE DE ÍTEMS */
+.listScroll {
+    max-height: 280px;
+    /* Altura aumentada */
+    overflow-y: auto;
+    border-radius: 8px;
+    padding-right: 4px;
+}
+
+/* ÍTEM INDIVIDUAL (ESPECIMEN O BOCHÓN) */
+.cardItem {
+    position: relative;
+    padding: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cardItem:hover {
+    background: #f0f8ff;
+    border-color: #b3d9ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ÍTEM SELECCIONADO */
+.cardSelected {
+    /* Azul principal de Bootstrap */
+    background: #e7f1ff !important;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+/* BADGE DEL CÓDIGO (NÚMERO) */
+.codeBadge {
+    display: inline-block;
+    background: rgba(13, 110, 253, 0.15);
+    color: #0d6efd;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1;
+}
+
+/* BADGE DE CHECK (CONFIRMACIÓN) */
+.checkBadge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #198754;
+    /* Verde de Bootstrap Success */
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.checkBadge svg {
+    stroke-width: 3px;
+}

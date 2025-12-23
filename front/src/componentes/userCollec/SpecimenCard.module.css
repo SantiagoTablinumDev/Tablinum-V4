@@ -1,0 +1,485 @@
+/* SpecimenCard Styles */
+.specimenCard {
+    width: 100%;
+    max-width: 24rem;
+    transition: all 0.3s ease;
+    border: 2px solid;
+    border-color: rgb(from var(--color-border) r g b / 0.5);
+    background: linear-gradient(135deg, var(--color-card), var(--color-card), rgb(from var(--color-card) r g b / 0.95));
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.specimenCard:hover {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-color: rgb(from var(--color-primary) r g b / 0.2);
+    transform: translateY(-4px);
+}
+
+.imageContainer {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, rgb(from var(--color-muted) r g b / 0.5), var(--color-muted));
+    border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+    position: relative;
+}
+
+.singleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.singleImage:hover {
+    transform: scale(1.05);
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel:hover .carouselPrev,
+.carousel:hover .carouselNext {
+    opacity: 1;
+}
+
+.carouselPrev,
+.carouselNext {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgb(from var(--color-background) r g b / 0.8);
+    border: 1px solid var(--color-border);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carouselPrev:hover,
+.carouselNext:hover {
+    background-color: var(--color-background);
+}
+
+.carouselPrev {
+    left: 0.5rem;
+}
+
+.carouselNext {
+    right: 0.5rem;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carouselImage:hover {
+    transform: scale(1.05);
+}
+
+.noImagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-muted), rgb(from var(--color-muted) r g b / 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgb(from var(--color-border) r g b / 0.6);
+    color: var(--color-muted-foreground);
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.specimenTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center content */
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.specimenNumber {
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+    color: var(--color-primary);
+    background-color: rgb(from var(--color-primary) r g b / 0.05);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    /* Increased size */
+    font-weight: 700;
+}
+
+.scientificName {
+    font-size: 1.125rem;
+    font-style: italic;
+    font-family: ui-serif, Georgia, serif;
+    color: var(--color-foreground);
+}
+
+.genus {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.species {
+    color: var(--color-muted-foreground);
+}
+
+.phyloBadge {
+    background: linear-gradient(90deg, var(--color-secondary), rgb(from var(--color-secondary) r g b / 0.8));
+    color: var(--color-secondary-foreground);
+    border: 1px solid rgb(from var(--color-border) r g b / 0.3);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* Section Styles */
+.geologicalSection {
+    padding: 0.75rem;
+    background: linear-gradient(90deg,
+            rgb(251 191 36 / 0.1),
+            rgb(249 115 22 / 0.1));
+    border-radius: 0.5rem;
+    border: 1px solid rgb(251 191 36 / 0.3);
+    margin-top: 0.5rem;
+}
+
+.locationSection {
+    padding: 0.75rem;
+    background: linear-gradient(90deg,
+            rgb(16 185 129 / 0.1),
+            rgb(34 197 94 / 0.1));
+    border-radius: 0.5rem;
+    border: 1px solid rgb(16 185 129 / 0.3);
+    margin-top: 0.5rem;
+}
+
+.discoverySection {
+    padding: 0.75rem;
+    background: linear-gradient(90deg,
+            rgb(59 130 246 / 0.1),
+            rgb(6 182 212 / 0.1));
+    border-radius: 0.5rem;
+    border: 1px solid rgb(59 130 246 / 0.3);
+    margin-top: 0.5rem;
+}
+
+.specimenSection {
+    padding: 0.75rem;
+    background: linear-gradient(90deg,
+            rgb(147 51 234 / 0.1),
+            rgb(99 102 241 / 0.1));
+    border-radius: 0.5rem;
+    border: 1px solid rgb(147 51 234 / 0.3);
+    margin-top: 0.5rem;
+}
+
+.commentSection {
+    padding: 0.75rem;
+    background: linear-gradient(90deg,
+            rgb(148 163 184 / 0.1),
+            rgb(156 163 175 / 0.1));
+    border-radius: 0.5rem;
+    border: 1px solid rgb(148 163 184 / 0.3);
+    margin-top: 0.5rem;
+}
+
+.sectionTitle {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.geologicalSection .sectionTitle {
+    color: rgb(146 64 14);
+}
+
+.locationSection .sectionTitle {
+    color: rgb(5 150 105);
+}
+
+.discoverySection .sectionTitle {
+    color: rgb(29 78 216);
+}
+
+.specimenSection .sectionTitle {
+    color: rgb(109 40 217);
+}
+
+.commentSection .sectionTitle {
+    color: rgb(71 85 105);
+}
+
+.gridCols2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.fieldContainer {
+    background-color: rgb(from var(--color-background) r g b / 0.6);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+}
+
+.fieldLabel {
+    color: var(--color-muted-foreground);
+    font-weight: 500;
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 0.125rem;
+}
+
+.fieldValue {
+    color: var(--color-foreground);
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.fieldNumber {
+    color: var(--color-foreground);
+    margin-left: 0.25rem;
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+    font-size: 0.75rem;
+    background-color: rgb(from var(--color-background) r g b / 0.6);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.125rem;
+}
+
+.dateField {
+    color: var(--color-foreground);
+    margin-left: 0.25rem;
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+    font-size: 0.75rem;
+}
+
+.coordinates {
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', monospace;
+    font-size: 0.75rem;
+    background-color: rgb(from var(--color-background) r g b / 0.6);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(from var(--color-border) r g b / 0.5);
+    color: var(--color-muted-foreground);
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.commentText {
+    font-size: 0.875rem;
+    color: var(--color-foreground);
+    font-style: italic;
+    line-height: 1.625;
+}
+
+/* List View Styles */
+
+/* ---- CARD LIST VIEW REDISEÑADA ---- */
+
+.specimenCardList {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    height: 240px;
+    /* altura compacta - increased again for better spacing */
+    border: 1px solid rgb(from var(--color-border) r g b / 0.25);
+    border-radius: 8px;
+    background: var(--color-card);
+    overflow: hidden;
+}
+
+/* ---- IZQUIERDA: IMAGEN + NOMBRE ---- */
+
+.listLeftSection {
+    width: 220px;
+    min-width: 220px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    border-right: 1px solid rgb(from var(--color-border) r g b / 0.15);
+}
+
+/* Imagen pequeña */
+.specimenCardList .imageContainer {
+    width: 100%;
+    height: 90px;
+    aspect-ratio: unset;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.specimenCardList .imageContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.specimenCard.specimenCardList {
+    max-width: none !important;
+}
+
+/* Nombre científico */
+.listSpecimenHeader {
+    text-align: left;
+}
+
+.specimenCardList .scientificName {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1;
+}
+
+/* ---- DERECHA: CONTENIDO ---- */
+
+.listContent {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.75rem;
+    gap: 1rem;
+}
+
+/* Columna */
+.listSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+    border-right: 1px solid rgb(from var(--color-border) r g b / 0.1);
+}
+
+.listSection:last-child {
+    border-right: none;
+}
+
+/* Título compacto */
+.specimenCardList .sectionTitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid rgb(from var(--color-border) r g b / 0.15);
+}
+
+/* Items */
+.specimenCardList .fieldContainer {
+    padding: 0.15rem 0;
+    border: none;
+    background: none;
+}
+
+.specimenCardList .fieldLabel {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--color-muted-foreground);
+}
+
+.specimenCardList .fieldValue,
+.specimenCardList .fieldNumber,
+.specimenCardList .dateField {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ---- Comentarios (opcional) ---- */
+
+.listCommentSection {
+    grid-column: span 4;
+    margin-top: auto;
+    /* Push to bottom if space permits */
+    padding: 0.5rem 0.25rem;
+    border-top: 1px solid rgb(from var(--color-border) r g b / 0.15);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: transparent;
+    border-radius: 0;
+}
+
+.specimenCardList .commentText {
+    font-size: 0.8rem;
+    color: var(--color-foreground);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+    flex: 1;
+    min-width: 0;
+}
+
+/* ===== NEW LIST VIEW LAYOUT ===== */
+
+.listContent {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 4fr;
+    /* single row */
+    padding: 0 1rem;
+}
+
+.listSections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.listSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.sectionTitle {
+    font-size: 0.7rem !important;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.line {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.line span {
+    font-weight: 600;
+    color: #666;
+}

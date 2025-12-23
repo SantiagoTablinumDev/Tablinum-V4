@@ -1,0 +1,267 @@
+/* AddSpecimenModal Styles */
+.modalContent {
+  max-width: 64rem;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, var(--background), var(--surface));
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.modalHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--surface);
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--primary), var(--primary-hover));
+  background-clip: text;
+  color: transparent;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.scrollArea {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* Section Styles */
+.basicSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(107, 124, 89, 0.1), rgba(107, 124, 89, 0.05));
+  /* Olive */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(107, 124, 89, 0.3);
+}
+
+.geologicalSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(217, 119, 6, 0.1), rgba(217, 119, 6, 0.05));
+  /* Gold */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+.locationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(140, 140, 136, 0.1), rgba(140, 140, 136, 0.05));
+  /* Grey */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(140, 140, 136, 0.3);
+}
+
+.discoverySection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(107, 124, 89, 0.1), rgba(140, 140, 136, 0.1));
+  /* Olive-Grey */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(107, 124, 89, 0.3);
+}
+
+.specimenSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(217, 119, 6, 0.1), rgba(107, 124, 89, 0.1));
+  /* Gold-Olive */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.basicSection .sectionTitle {
+  color: var(--primary);
+}
+
+.geologicalSection .sectionTitle {
+  color: var(--accent);
+}
+
+.locationSection .sectionTitle {
+  color: var(--secondary);
+}
+
+.discoverySection .sectionTitle {
+  color: var(--primary);
+}
+
+.specimenSection .sectionTitle {
+  color: var(--accent);
+}
+
+/* Grid Layouts */
+.gridCols2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gridCols3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Labels */
+.fieldLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.basicSection .fieldLabel {
+  color: var(--primary);
+}
+
+.geologicalSection .fieldLabel {
+  color: var(--accent);
+}
+
+.locationSection .fieldLabel {
+  color: var(--secondary);
+}
+
+.discoverySection .fieldLabel {
+  color: var(--primary);
+}
+
+.specimenSection .fieldLabel {
+  color: var(--accent);
+}
+
+.requiredLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.required {
+  color: var(--destructive);
+}
+
+/* Input Styles */
+.standardInput,
+.monoInput,
+.italicInput,
+.textareaInput {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.standardInput:focus,
+.monoInput:focus,
+.italicInput:focus,
+.textareaInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(107, 124, 89, 0.2);
+}
+
+.basicSection .standardInput:focus {
+  border-color: var(--primary);
+}
+
+.geologicalSection .standardInput:focus {
+  border-color: var(--accent);
+}
+
+.locationSection .standardInput:focus {
+  border-color: var(--secondary);
+}
+
+.discoverySection .standardInput:focus {
+  border-color: var(--primary);
+}
+
+.specimenSection .standardInput:focus {
+  border-color: var(--accent);
+}
+
+.monoInput {
+  font-family: var(--font-mono);
+}
+
+.italicInput {
+  font-style: italic;
+}
+
+/* Footer */
+.modalFooter {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  background-color: var(--surface);
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.cancelButton {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.cancelButton:hover {
+  background-color: var(--surface-hover);
+  color: var(--text-main);
+}
+
+.addButton {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+
+.addButton:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--shadow-lg);
+}

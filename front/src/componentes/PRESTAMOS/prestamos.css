@@ -1,0 +1,477 @@
+/* Modern Color Palette & Variables - keeping these */
+:root {
+  --primary-color: #6b705c;
+  --primary-hover: #585c4b;
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --border-color: #ced4da;
+  --danger-bg: rgba(220, 53, 69, 0.1);
+  --danger-text: #a71d2a;
+  --input-bg: #fff;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --radius: 6px;
+}
+
+.container34 {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+}
+
+.formulario-prestamo {
+  display: flex;
+  height: 99%;
+  /* Removed fixed alignment/width changes to match original */
+}
+
+.form-prest {
+  background-color: #e9ecef;
+  /* SOFT NEW COLOR */
+  width: 80%;
+  /* ORIGINAL WIDTH */
+  display: flex;
+  flex-wrap: nowrap;
+  /* ORIGINAL */
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  /* ORIGINAL PADDING */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: solid;
+  border-color: rgb(51, 51, 51);
+  border-width: 1px;
+  /* Added cosmetic shadow only */
+  box-shadow: var(--shadow-md);
+}
+
+#main-container234 {
+  /* ... otros estilos ... */
+  overflow-y: auto;
+  /* Habilita el scroll vertical si el contenido excede la altura máxima */
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  /* Custom Scrollbar */
+  scrollbar-width: thin;
+}
+
+#main-container234::-webkit-scrollbar {
+  width: 8px;
+}
+
+#main-container234::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#main-container234::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.sdsd {
+  width: 70%;
+  /* ORIGINAL WIDTH */
+  color: #495057;
+  background-size: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: var(--radius);
+  /* IMPROVED RADIUS */
+  padding: 5px;
+  /* Subtle padding addition */
+  background-color: var(--input-bg);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sdsd:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(107, 112, 92, 0.2);
+}
+
+.sdsd2 {
+  width: 70%;
+  /* ORIGINAL WIDTH */
+}
+
+.numeros-de-especimen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* Added subtle style */
+  gap: 5px;
+}
+
+.caca-prestamos {
+  border-radius: 15px;
+  /* More rounded */
+  margin: 6px;
+  background-color: var(--primary-color);
+  min-width: 30px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  /* Changed to white for better contrast */
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0 10px;
+  /* Added padding for text */
+  display: flex;
+  /* Added display flex for centering */
+  align-items: center;
+  justify-content: center;
+}
+
+.caca-prestamos:hover {
+  background-color: var(--danger-text);
+}
+
+
+.text-pres {
+  width: 80%;
+  /* ORIGINAL WIDTH */
+  height: 13%;
+  /* ORIGINAL HEIGHT */
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: var(--radius);
+  padding: 10px;
+}
+
+.boton-prest {
+  margin-top: 9px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.boton-prest:hover {
+  background-color: var(--primary-hover);
+}
+
+.crear-prest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  /* ORIGINAL WIDTH */
+  height: 90%;
+  margin-top: 20px;
+}
+
+.lista-prest {
+  display: flex;
+  flex-direction: column;
+  width: 62%;
+  /* ORIGINAL WIDTH */
+  margin-top: 2%;
+  margin-top: 20px;
+}
+
+.formulario-prestamo {
+  width: 100%;
+  margin-left: 20%;
+  /* ORIGINAL MARGIN */
+}
+
+.conte-div {
+  width: 80%;
+  /* ORIGINAL WIDTH */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* ORIGINAL JUSTIFY */
+  margin-bottom: 10px;
+  /* Added spacing */
+}
+
+.conte-div label {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+.conte-div2 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+#main-container2 {
+  display: flex;
+  width: 82%;
+  align-items: center;
+  align-content: center;
+  margin-top: 8px;
+}
+
+.cont {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+}
+
+.gen-selected {
+  width: 80%;
+  height: 20px;
+}
+
+.apre {
+  display: flex;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.buscar-prestamo {
+  background-color: #e9ecef;
+  /* NEW COLOR */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  align-items: center;
+}
+
+.buscar-prestamo-input {
+  margin-top: 8px;
+  text-align: center;
+  width: 30%;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-color);
+  padding: 5px;
+}
+
+.danger {
+  background-color: rgba(255, 0, 0, 0.324) !important
+}
+
+.danger1 {
+  background-color: #617b3c6b !important;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.pase {
+  background-color: rgb(233, 233, 233)
+}
+
+.pase1 {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.contenido-prest {
+  background-color: #369681;
+  display: flex;
+  flex-direction: column;
+  text-align: none;
+  width: 100%;
+  border-color: #369681;
+}
+
+.tabli-headP {
+  display: flex;
+  background-color: var(--primary-color);
+  border-bottom: solid 5px var(--primary-color);
+  color: white;
+  width: 100%;
+  height: 65px;
+  /* Added for nicer text */
+  align-items: center;
+}
+
+.tabli-headP th {
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.trHead {
+  width: 100%;
+}
+
+.papa1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.papa {
+  display: flex;
+  width: 100%;
+}
+
+.tr2 {
+  width: 100%;
+}
+
+/* IMPROVED RED ROW */
+.tr2Rojo {
+  background-color: #ffeef0 !important;
+  /* Soft Red */
+  width: 100%;
+  color: var(--danger-text);
+  font-weight: 500;
+}
+
+.tr2Rojo:hover {
+  background-color: #ffdce0 !important;
+}
+
+
+.trHijo {
+  display: flex;
+  width: 95%;
+}
+
+.printer {
+  cursor: pointer;
+  display: flex;
+  width: 5%;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+
+.td-eliminar {
+  display: flex;
+  width: 30%;
+}
+
+.tabli-headPELIMINAR {
+  background-color: #6b705c;
+  border-bottom: solid 5px #6b705c;
+  color: white;
+  width: 100%;
+  height: 65px;
+}
+
+.cab-pres {
+  background-color: var(--primary-color);
+  width: 80%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: aliceblue;
+  border-style: solid;
+  border-color: rgb(51, 51, 51);
+  border-width: 1px;
+  padding: 10px 0;
+  /* Added padding */
+  text-align: center;
+}
+
+.hhh {
+  margin: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* Added specific hover for table rows */
+.bodyPres tr {
+  transition: background-color 0.2s;
+}
+
+.bodyPres tr:hover {
+  background-color: #e2e6ea;
+  cursor: pointer;
+}
+
+/* Original Media Queries */
+@media screen and (max-width: 600px) {
+  .conte-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .conte-div label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .conte-div input,
+  .conte-div select {
+    width: 100%;
+  }
+}
+
+.papa1 tr:nth-child(even) {
+  background-color: #f8f9fa;
+  /* Softer gray */
+}
+
+/* Remove Duplicate/Conflicting blocks from old CSS to ensure clarity */
+
+.papa1 thead {
+  position: sticky;
+  top: 0;
+  background-color: #6b705c;
+}
+
+.bodyPres {
+  max-height: 600px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* Modal Detalle Styles */
+.modal-detalle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.modal-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 4px;
+}
+
+.modal-label {
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 40%;
+  margin-right: 10px;
+}
+
+.modal-value {
+  width: 60%;
+  text-align: right;
+  color: #444;
+  word-break: break-word;
+}
